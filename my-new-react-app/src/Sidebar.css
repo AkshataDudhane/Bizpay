@@ -1,0 +1,68 @@
+@media only screen and (max-width: 1440px) {
+.container {
+display: flex;
+position: relative;
+}
+.sidebar {
+  background-color: #1c1526;
+  width: 225px; /* Adjust width as needed */
+  height: 900px; /* Takes full height of the viewport */
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px; /* Adjust padding as needed */
+  opacity: 1; /* Ensure the sidebar is visible */
+  /* Add more styles for the sidebar content */
+}
+
+.navbar {
+  width: "1200px";
+  height: 69px;
+  position: absolute;
+  top: 0;
+  left: 206px;
+  gap: 0px;
+  opacity: 1; /* Ensure the navbar is visible */
+  /* Add more styles for the navbar content */
+}
+
+.divider {
+  width: 100%;
+  height: 0px;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  background: #ebeff2;
+  opacity: 1; /* Ensure the divider is visible */
+  /* Add more styles for the divider */
+}
+
+.divider2 {
+  width: 0; /* Set width to 0 for a vertical line */
+  height: 49px;
+  position: absolute;
+  top: 10px;
+  left: 1240px;
+  border-left: 0.5px solid #d6d6d6; /* Adjust border as needed */
+  opacity: 1; /* Ensure the vertical line is visible */
+  /* transform: rotate(-90deg); Rotate the line by -90 degrees */
+}
+}
+/* Add media query for smaller screen sizes */
+@media only screen and (max-width: 768px) {
+  .container{
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%; /* Make sidebar full width for smaller screens */
+  }
+
+  .navbar {
+    width: 100%; /* Make navbar full width for smaller screens */
+    left: 0; /* Align navbar to the left edge */
+  }
+
+  .divider2 {
+    display: none; /* Hide the vertical line for smaller screens */
+  }
+}
